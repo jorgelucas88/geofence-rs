@@ -1,4 +1,4 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { GeofenceDTO } from './dto/geofence.dto';
 import { Geofence } from './model/geofence.model';
 import { GeofenceService } from './geofence.service';
@@ -9,10 +9,15 @@ export class GeofenceController {
   constructor(private readonly geofenceService: GeofenceService) {}
 
   @Post("/v1/geofence")
-  async geofence(@Body() geofenceDTO: GeofenceDTO) {
-    
+  async geofence(@Body() geofenceDTO: GeofenceDTO): Promise<Geofence> {
+
     const geofence: Geofence = GeofenceUtils.getGeofenceObject(geofenceDTO);
     return await this.geofenceService.processGeofence(geofence);
+  }
+
+  @Get("/health")
+  public health(): void {
+    return;
   }
 
  
