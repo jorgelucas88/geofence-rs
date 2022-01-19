@@ -1,8 +1,7 @@
-# Phone catalog 1.0
-Welcome to the repo of phone catalog 1.0
+# Geofence API
 
 ## Description
-This catalog allows CRUD operations of smartphones (including a photo).
+Provides an API to calculate if a pair of coordinates is within a geofence polygon
 
 ## Node version
 Node v14
@@ -10,7 +9,7 @@ Node v14
 ## NestJS
 NestJS v8.2.3
 
-## Instalacion
+## Installation
 - set to node 14
 - clone repo branch dev
 - npm install
@@ -19,15 +18,13 @@ To run
 - Using docker: docker-compose up dev
 - Running locally: npm run start
 
-## Usage
-1. APIs: 
-- GET /phones - get all phones (optional params: page and pageSize; default is 0 and 15)
-- POST /phones - create a phone entry
-- DELETE /phones/:id - soft delete a phone by id (fill the column deletedAt)
-- PATCH /phones - patch a phone
-- DELETE /phones/image/:id - hard delete a image from a phone
+## Postman collection
+https://drive.google.com/drive/folders/1qnaEozPznM5y_aZ0wUOGIfXx1GrPqgPY?usp=sharing
 
 ## Heroku deployment
+https://geofence-rs.herokuapp.com/v1/geofence
+
+## Postman collection
 
 
 ## Running the microservice:
@@ -51,8 +48,5 @@ $ npm run test
 
 # e2e tests
 $ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 

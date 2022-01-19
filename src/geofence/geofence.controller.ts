@@ -14,9 +14,4 @@ export class GeofenceController {
     const geofence: Geofence = GeofenceUtils.getGeofenceObject(geofenceDTO);
     return await this.geofenceService.processGeofence(geofence);
   }
-
-  @Get("/health")
-  public health(): void {
-    return;
-  }
 }

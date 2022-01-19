@@ -23,9 +23,12 @@
     "robots-cli-": "npm run-script build && node dist/main robots-cli"
   },
   "dependencies": {
+    "@nestjs/axios": "0.0.4",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "@nestjs/swagger": "^5.1.5",
+    "@nestjs/terminus": "^8.0.4",
     "@nestjs/throttler": "^2.0.0",
     "@nestjs/typeorm": "^8.0.2",
     "lodash": "^4.17.21",
@@ -34,9 +37,11 @@
     "rxjs": "^7.2.0",
     "sequelize": "^6.12.5",
     "sqlite3": "^5.0.2",
+    "swagger-ui-express": "^4.3.0",
     "typeorm": "^0.2.41"
   },
   "devDependencies": {
+    "@compodoc/compodoc": "^1.1.18",
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/testing": "^8.0.0",
