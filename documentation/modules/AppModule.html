@@ -146,8 +146,10 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpModule } from &#x27;@nestjs/axios&#x27;;
 import { Module } from &#x27;@nestjs/common&#x27;;
 import { APP_GUARD } from &#x27;@nestjs/core&#x27;;
+import { ServeStaticModule } from &#x27;@nestjs/serve-static&#x27;;
 import { TerminusModule } from &#x27;@nestjs/terminus&#x27;;
 import { ThrottlerGuard, ThrottlerModule } from &#x27;@nestjs/throttler&#x27;;
+import { join } from &#x27;path&#x27;;
 
 import { GeofenceModule } from &#x27;./geofence/geofence.module&#x27;;
 import { HealthController } from &#x27;./health/health.controller&#x27;;
@@ -158,7 +160,12 @@ import { HealthController } from &#x27;./health/health.controller&#x27;;
       ttl: 60,
       limit: 10,
     }),
-    TerminusModule, HttpModule],
+    TerminusModule, 
+    HttpModule,
+    ServeStaticModule.forRoot({
+      rootPath: join(__dirname, &#x27;..&#x27;, &#x27;documentation&#x27;),
+      exclude: [&#x27;/api*&#x27;],
+    })],
   controllers: [HealthController],
   providers: [ {
     provide: APP_GUARD,

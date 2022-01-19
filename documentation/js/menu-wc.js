@@ -54,13 +54,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link" >AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#controllers-links-module-AppModule-2212aa3f3092bbb58a217107f2c369be7878df28922baab461911b7de63b06918b52dfea238bdbea5a07820e2247d6ff901dd9b45e3232e5fc81928d6a76d9b6"' : 'data-target="#xs-controllers-links-module-AppModule-2212aa3f3092bbb58a217107f2c369be7878df28922baab461911b7de63b06918b52dfea238bdbea5a07820e2247d6ff901dd9b45e3232e5fc81928d6a76d9b6"' }>
+                                            'data-target="#controllers-links-module-AppModule-bc1655c54e8150118c8bfe4d39e6f69066632456015156655a70b4e1a15462b9428f0969d6f568582dfb8d8212ee3fb2780fb9bf809570e74e1ba9b9c7ec2bde"' : 'data-target="#xs-controllers-links-module-AppModule-bc1655c54e8150118c8bfe4d39e6f69066632456015156655a70b4e1a15462b9428f0969d6f568582dfb8d8212ee3fb2780fb9bf809570e74e1ba9b9c7ec2bde"' }>
                                             <span class="icon ion-md-swap"></span>
                                             <span>Controllers</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="controllers-links-module-AppModule-2212aa3f3092bbb58a217107f2c369be7878df28922baab461911b7de63b06918b52dfea238bdbea5a07820e2247d6ff901dd9b45e3232e5fc81928d6a76d9b6"' :
-                                            'id="xs-controllers-links-module-AppModule-2212aa3f3092bbb58a217107f2c369be7878df28922baab461911b7de63b06918b52dfea238bdbea5a07820e2247d6ff901dd9b45e3232e5fc81928d6a76d9b6"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="controllers-links-module-AppModule-bc1655c54e8150118c8bfe4d39e6f69066632456015156655a70b4e1a15462b9428f0969d6f568582dfb8d8212ee3fb2780fb9bf809570e74e1ba9b9c7ec2bde"' :
+                                            'id="xs-controllers-links-module-AppModule-bc1655c54e8150118c8bfe4d39e6f69066632456015156655a70b4e1a15462b9428f0969d6f568582dfb8d8212ee3fb2780fb9bf809570e74e1ba9b9c7ec2bde"' }>
                                             <li class="link">
                                                 <a href="controllers/HealthController.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >HealthController</a>
                                             </li>

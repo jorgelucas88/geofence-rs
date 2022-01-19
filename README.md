@@ -24,7 +24,14 @@ https://drive.google.com/drive/folders/1qnaEozPznM5y_aZ0wUOGIfXx1GrPqgPY?usp=sha
 ## Heroku deployment
 https://geofence-rs.herokuapp.com/v1/geofence
 
-## Postman collection
+## OpenAPI
+https://geofence-rs.herokuapp.com/api
+
+## Generated documentation
+https://geofence-rs.herokuapp.com/
+
+## Health check
+https://geofence-rs.herokuapp.com/health
 
 
 ## Running the microservice:
@@ -43,9 +50,6 @@ $ npm run start:prod
 ## Test
 
 ```bash
-# unit tests
-$ npm run test
-
 # e2e tests
 $ npm run test:e2e
 ```
